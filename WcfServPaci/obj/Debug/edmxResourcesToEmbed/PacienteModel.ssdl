@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="prueba_andersonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="pacientes">
+    <Key>
+      <PropertyRef Name="numero_documento" />
+    </Key>
+    <Property Name="tipo_documento" Type="varchar" MaxLength="50" />
+    <Property Name="numero_documento" Type="int" Nullable="false" />
+    <Property Name="nombres" Type="varchar" MaxLength="50" />
+    <Property Name="apellidos" Type="varchar" MaxLength="50" />
+    <Property Name="correo" Type="varchar" MaxLength="50" />
+    <Property Name="telefono" Type="int" />
+    <Property Name="fecha_nacimiento" Type="datetime" />
+    <Property Name="estado_afiliacion" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="prueba_andersonModelStoreContainer">
+    <EntitySet Name="pacientes" EntityType="Self.pacientes" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

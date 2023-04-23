@@ -1,0 +1,12 @@
+C:\Users\PC\source\repos\WcfServPaci\bin\WcfServPaci.dll.config
+C:\Users\PC\source\repos\WcfServPaci\bin\WcfServPaci.dll
+C:\Users\PC\source\repos\WcfServPaci\bin\WcfServPaci.pdb
+C:\Users\PC\source\repos\WcfServPaci\bin\EntityFramework.dll
+C:\Users\PC\source\repos\WcfServPaci\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\source\repos\WcfServPaci\bin\EntityFramework.xml
+C:\Users\PC\source\repos\WcfServPaci\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\source\repos\WcfServPaci\obj\Debug\WcfServPaci.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\WcfServPaci\obj\Debug\WcfServPaci.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\WcfServPaci\obj\Debug\WcfServPaci.csproj.CopyComplete
+C:\Users\PC\source\repos\WcfServPaci\obj\Debug\WcfServPaci.dll
+C:\Users\PC\source\repos\WcfServPaci\obj\Debug\WcfServPaci.pdb

@@ -1,22 +1,36 @@
-create database prueba_anderson
+--     create database prueba_anderson
 
-create  table pacientes(
-tipo_documento int ,
-numero_documento int,
+IF OBJECT_ID('dbo.Pacientes') IS NOT NULL
+BEGIN
+	DROP TABLE dbo.Pacientes
+
+	IF OBJECT_ID('dbo.Pacientes') IS NOT NULL
+		PRINT '<<< FAILED DROPPING TABLE dbo.Pacientes >>>'
+	ELSE
+		PRINT '<<< DROPPED TABLE dbo.Pacientes >>>'
+END
+GO
+
+
+create  table Pacientes(
+tipo_documento varchar(50),
+numero_documento int primary key,
 nombres varchar(50),
 apellidos varchar(50),
 correo varchar(50),
 telefono int,
 fecha_nacimiento datetime,
-estado_afiliacion char
-
+estado_afiliacion varchar(20)
 )
 
-create table documento(
-id int,
-descripcion varchar(50)
-)
 
-create index tipo_documento_pk on pacientes ( numero_documento ) 
+IF OBJECT_ID('dbo.Pacientes') IS NOT NULL
+	PRINT '<<< CREATED TABLE dbo.Pacientes  >>>'
+ELSE
+	PRINT '<<< FAILED CREATING TABLE dbo.Pacientes >>>'
+GO
 
-create index pacientes_pk on documento ( id ) 
+IF @@ERROR != 0
+	SELECT '*** ERROR en Script ***'
+ELSE
+	SELECT 'Finalizo OK ' + RTRIM(CAST(GETDATE() AS NVARCHAR(30)))
